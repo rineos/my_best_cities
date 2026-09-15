@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Запропонувати місто — Блог</title>
+</head>
+<body>
+    <header>
+        <h1>Запропонувати місто для наступного рейтингу</h1>
+        <nav>
+            <a href="index.html">Головна</a> |
+            <a href="city-kyiv.html">Київ</a> |
+            <a href="city-lviv.html">Львів</a> |
+            <a href="city-tokyo.html">Токіо</a> |
+            <a href="form.html">Запропонувати місто</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Заповніть форму</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="user-name">Ваше ім'я:</label><br>
+                    <input type="text" id="user-name" name="user_name" placeholder="Введіть ваше ім'я" required>
+                </p>
+
+                <p>
+                    <label for="user-email">Ваш Email:</label><br>
+                    <input type="email" id="user-email" name="user_email" placeholder="example@mail.com" required>
+                </p>
+
+                <p>
+                    <label for="city-name">Назва міста:</label><br>
+                    <input type="text" id="city-name" name="city_name" placeholder="Наприклад: Лондон" required>
+                </p>
+
+                <p>
+                    <label for="country">Країна:</label><br>
+                    <input type="text" id="country" name="country" placeholder="Наприклад: Велика Британія" required>
+                </p>
+
+                <p>
+                    <label for="category">Категорія міста:</label><br>
+                    <select id="category" name="category">
+                        <option value="historical">Історичне місто</option>
+                        <option value="modern">Сучасний мегаполіс</option>
+                        <option value="resort">Курорт / Природа</option>
+                        <option value="cultural">Культурна столиця</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="description">Чому варто відвідати це місто?</label><br>
+                    <textarea id="description" name="description" rows="5" cols="40" placeholder="Опишіть особливості та пам'ятки міста..." required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Надіслати пропозицію</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Огниста Рената</p>
+    </footer>
+</body>
+</html>
